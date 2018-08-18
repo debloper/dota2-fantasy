@@ -1,0 +1,83 @@
+#!/usr/bin/env node
+
+/**
+ * Mohamed Sohail <sohailsameja@gmail.com>
+ * 
+ * Usage: ./scraper > data.json
+ */
+
+const cheerio = require("cheerio");
+const request = require("request-promise-native");
+
+const baseUrl = "https://liquipedia.net/dota2/The_International/2018";
+
+const rawTeams= [];
+const rawPlayers = [];
+const teams = [];
+
+function main(done) {
+    // scrape data from liquidpedia
+    request.get(baseUrl).then(res => {
+        const $ = cheerio.load(res);
+
+        $(".teamcard center a").each((key, value) => {
+            rawTeams.push($(value).attr("title"));
+        });
+
+        $(".table.table-bordered.list").each((key, value) => {
+            // parse data and store remporarily
+            const teamData = $(value).text().split(/(.+\s5\s\S*)/ig)[1];
+            const teamPlayers = teamData.split(/(\d\s\S*)/ig);
+
+            teamPlayers.forEach((value, index) => {
+                if (value.length > 1) {
+                    const string = value.split(/\s/g);
+                    let pos;
+                    
+                    switch (string[0]) {
+                        case "1": pos = "core"; break;
+                        case "2": pos = "core"; break;
+                        case "3": pos = "offlane"; break;
+                        case "4": pos = "support"; break;
+                        case "5": pos = "support"; break;
+                    }
+
+                    const object = {
+                        name: string[1],
+                        position: pos
+                    }
+
+                    rawPlayers.push(object);
+                }
+            });
+        });
+
+        return done(true);
+    })
+};
+
+const tData = [];
+const data = [];
+
+main(next => {
+    // map player to his respective team
+    for(let i = 0; i < rawTeams.length; i++) {
+        teams.push(rawPlayers.slice(i * 5, i * 5 + 5));
+    };
+
+    for(let j = 0; j < teams.length; j++) {
+        for(let k = 0; k < 5; k++) {
+            const fObj = teams[j][k];
+            fObj.team = rawTeams[j];
+
+            tData.push(fObj);
+        }
+    }
+
+    // final object
+    for(let i = 0; i < rawTeams.length; i++) {
+        data.push(tData.slice(i * 5, i * 5 + 5));
+    };
+
+    return console.log(JSON.stringify(data));
+});
