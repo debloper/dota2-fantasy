@@ -4,6 +4,8 @@
  * Mohamed Sohail <sohailsameja@gmail.com>
  * 
  * Usage: npm run scraper
+ * 
+ * Args: --minify : Dump a minified JSON output
  */
 
 const cheerio = require("cheerio");
@@ -67,5 +69,9 @@ main(next => {
         dataObject[rawTeams[j]] = teams[j];
     };
 
-    return console.log(JSON.stringify(dataObject, null, " "));
+    if (process.argv.slice(2)[0] === "--minify") {
+        return console.log(JSON.stringify(dataObject));
+    } else {
+        return console.log(JSON.stringify(dataObject, null, " "));
+    }
 });
