@@ -10,10 +10,14 @@
     "start": "nuxt start",
     "generate": "nuxt generate",
     "lint": "eslint --ext .js,.vue --ignore-path .gitignore .",
+    "scraper": "bin/scraper",
     "precommit": "npm run lint"
   },
   "dependencies": {
-    "nuxt": "^1.0.0"
+    "cheerio": "^1.0.0-rc.2",
+    "nuxt": "^1.0.0",
+    "request": "^2.88.0",
+    "request-promise-native": "^1.0.5"
   },
   "devDependencies": {
     "babel-eslint": "^8.2.1",
