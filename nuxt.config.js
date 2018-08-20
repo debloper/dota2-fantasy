@@ -18,6 +18,12 @@ module.exports = {
   */
   loading: { color: '#abcabc' },
   /*
+  ** Load external modules
+  */
+  modules: [
+    'nuxt-buefy'
+  ],
+  /*
   ** Build configuration
   */
   build: {
