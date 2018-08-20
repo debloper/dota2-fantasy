@@ -3,7 +3,7 @@
 /**
  * Mohamed Sohail <sohailsameja@gmail.com>
  * 
- * Usage: ./scraper > data.json
+ * Usage: npm run scraper
  */
 
 const cheerio = require("cheerio");
@@ -14,6 +14,7 @@ const baseUrl = "https://liquipedia.net/dota2/The_International/2018";
 const rawTeams= [];
 const rawPlayers = [];
 const teams = [];
+const dataObject = {};
 
 function main(done) {
     // scrape data from liquidpedia
@@ -56,28 +57,15 @@ function main(done) {
     })
 };
 
-const tData = [];
-const data = [];
-
 main(next => {
-    // map player to his respective team
+    // assign team name key to every array of players
     for(let i = 0; i < rawTeams.length; i++) {
         teams.push(rawPlayers.slice(i * 5, i * 5 + 5));
     };
 
     for(let j = 0; j < teams.length; j++) {
-        for(let k = 0; k < 5; k++) {
-            const fObj = teams[j][k];
-            fObj.team = rawTeams[j];
-
-            tData.push(fObj);
-        }
-    }
-
-    // final object
-    for(let i = 0; i < rawTeams.length; i++) {
-        data.push(tData.slice(i * 5, i * 5 + 5));
+        dataObject[rawTeams[j]] = teams[j];
     };
 
-    return console.log(JSON.stringify(data));
+    return console.log(JSON.stringify(dataObject, null, " "));
 });

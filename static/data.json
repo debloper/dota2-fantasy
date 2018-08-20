@@ -1,1 +1,398 @@
-[[{"name":"RAMZES666","position":"core","team":"Virtus.pro"},{"name":"No[o]ne","position":"core","team":"Virtus.pro"},{"name":"9pasha","position":"offlane","team":"Virtus.pro"},{"name":"RodjER","position":"support","team":"Virtus.pro"},{"name":"Solo","position":"support","team":"Virtus.pro"}],[{"name":"MATUMBAMAN","position":"core","team":"Team Liquid"},{"name":"Miracle-","position":"core","team":"Team Liquid"},{"name":"MinD_ContRoL","position":"offlane","team":"Team Liquid"},{"name":"GH","position":"support","team":"Team Liquid"},{"name":"KuroKy","position":"support","team":"Team Liquid"}],[{"name":"Ame","position":"core","team":"PSG.LGD"},{"name":"Somnus丶M","position":"core","team":"PSG.LGD"},{"name":"Chalice","position":"offlane","team":"PSG.LGD"},{"name":"fy","position":"support","team":"PSG.LGD"},{"name":"xNova","position":"support","team":"PSG.LGD"}],[{"name":"Ace","position":"core","team":"Team Secret"},{"name":"MidOne","position":"core","team":"Team Secret"},{"name":"Fata","position":"offlane","team":"Team Secret"},{"name":"YapzOr","position":"support","team":"Team Secret"},{"name":"Puppey","position":"support","team":"Team Secret"}],[{"name":"Mushi","position":"core","team":"Mineski"},{"name":"Moon","position":"core","team":"Mineski"},{"name":"iceiceice","position":"offlane","team":"Mineski"},{"name":"Jabz","position":"support","team":"Mineski"},{"name":"ninjaboogie","position":"support","team":"Mineski"}],[{"name":"Paparazi灬","position":"core","team":"Vici Gaming"},{"name":"Ori","position":"core","team":"Vici Gaming"},{"name":"eLeVeN","position":"offlane","team":"Vici Gaming"},{"name":"LaNm","position":"support","team":"Vici Gaming"},{"name":"Fenrir","position":"support","team":"Vici Gaming"}],[{"name":"Moogy","position":"core","team":"Newbee"},{"name":"Sccc","position":"core","team":"Newbee"},{"name":"kpii","position":"offlane","team":"Newbee"},{"name":"Kaka","position":"support","team":"Newbee"},{"name":"Faith","position":"support","team":"Newbee"}],[{"name":"Sylar","position":"core","team":"VGJ.Thunder"},{"name":"Freeze","position":"core","team":"VGJ.Thunder"},{"name":"Yang","position":"offlane","team":"VGJ.Thunder"},{"name":"Fade","position":"support","team":"VGJ.Thunder"},{"name":"ddc","position":"support","team":"VGJ.Thunder"}],[{"name":"ana","position":"core","team":"OG"},{"name":"Topson","position":"core","team":"OG"},{"name":"7ckngMad","position":"offlane","team":"OG"},{"name":"JerAx","position":"support","team":"OG"},{"name":"N0tail","position":"support","team":"OG"}],[{"name":"Silent","position":"core","team":"Winstrike Team"},{"name":"Iceberg","position":"core","team":"Winstrike Team"},{"name":"nongrata","position":"offlane","team":"Winstrike Team"},{"name":"Nofear","position":"support","team":"Winstrike Team"},{"name":"ALWAYSWANNAFLY","position":"support","team":"Winstrike Team"}],[{"name":"zhizhizhi","position":"core","team":"Team Serenity"},{"name":"Zyd","position":"core","team":"Team Serenity"},{"name":"XinQ","position":"offlane","team":"Team Serenity"},{"name":"Pyw","position":"support","team":"Team Serenity"},{"name":"XCJ","position":"support","team":"Team Serenity"}],[{"name":"Agressif","position":"core","team":"Invictus Gaming"},{"name":"Xxs","position":"core","team":"Invictus Gaming"},{"name":"Srf","position":"offlane","team":"Invictus Gaming"},{"name":"BoBoKa","position":"support","team":"Invictus Gaming"},{"name":"Q","position":"support","team":"Invictus Gaming"}],[{"name":"EternaLEnVy","position":"core","team":"Fnatic"},{"name":"Abed","position":"core","team":"Fnatic"},{"name":"UNiVeRsE","position":"offlane","team":"Fnatic"},{"name":"DJ","position":"support","team":"Fnatic"},{"name":"pieliedie","position":"support","team":"Fnatic"}],[{"name":"Raven","position":"core","team":"TNC Predator"},{"name":"Armel","position":"core","team":"TNC Predator"},{"name":"Sam_H","position":"offlane","team":"TNC Predator"},{"name":"Tims","position":"support","team":"TNC Predator"},{"name":"Kuku","position":"support","team":"TNC Predator"}],[{"name":"YawaR","position":"core","team":"VGJ.Storm"},{"name":"Resolut1on","position":"core","team":"VGJ.Storm"},{"name":"Sneyking","position":"offlane","team":"VGJ.Storm"},{"name":"MSS","position":"support","team":"VGJ.Storm"},{"name":"SVG","position":"support","team":"VGJ.Storm"}],[{"name":"Arteezy","position":"core","team":"Evil Geniuses"},{"name":"SumaiL","position":"core","team":"Evil Geniuses"},{"name":"s4","position":"offlane","team":"Evil Geniuses"},{"name":"Cr1t-","position":"support","team":"Evil Geniuses"},{"name":"Fly","position":"support","team":"Evil Geniuses"}],[{"name":"Pajkatt","position":"core","team":"OpTic Gaming"},{"name":"CCnC","position":"core","team":"OpTic Gaming"},{"name":"33","position":"offlane","team":"OpTic Gaming"},{"name":"zai","position":"support","team":"OpTic Gaming"},{"name":"Peterpandam","position":"support","team":"OpTic Gaming"}],[{"name":"hFn","position":"core","team":"PaiN Gaming"},{"name":"w33","position":"core","team":"PaiN Gaming"},{"name":"tavo","position":"offlane","team":"PaiN Gaming"},{"name":"Kingrd","position":"support","team":"PaiN Gaming"},{"name":"Duster","position":"support","team":"PaiN Gaming"}]]
+{
+ "Virtus.pro": [
+  {
+   "name": "RAMZES666",
+   "position": "core"
+  },
+  {
+   "name": "No[o]ne",
+   "position": "core"
+  },
+  {
+   "name": "9pasha",
+   "position": "offlane"
+  },
+  {
+   "name": "RodjER",
+   "position": "support"
+  },
+  {
+   "name": "Solo",
+   "position": "support"
+  }
+ ],
+ "Team Liquid": [
+  {
+   "name": "MATUMBAMAN",
+   "position": "core"
+  },
+  {
+   "name": "Miracle-",
+   "position": "core"
+  },
+  {
+   "name": "MinD_ContRoL",
+   "position": "offlane"
+  },
+  {
+   "name": "GH",
+   "position": "support"
+  },
+  {
+   "name": "KuroKy",
+   "position": "support"
+  }
+ ],
+ "PSG.LGD": [
+  {
+   "name": "Ame",
+   "position": "core"
+  },
+  {
+   "name": "Somnus丶M",
+   "position": "core"
+  },
+  {
+   "name": "Chalice",
+   "position": "offlane"
+  },
+  {
+   "name": "fy",
+   "position": "support"
+  },
+  {
+   "name": "xNova",
+   "position": "support"
+  }
+ ],
+ "Team Secret": [
+  {
+   "name": "Ace",
+   "position": "core"
+  },
+  {
+   "name": "MidOne",
+   "position": "core"
+  },
+  {
+   "name": "Fata",
+   "position": "offlane"
+  },
+  {
+   "name": "YapzOr",
+   "position": "support"
+  },
+  {
+   "name": "Puppey",
+   "position": "support"
+  }
+ ],
+ "Mineski": [
+  {
+   "name": "Mushi",
+   "position": "core"
+  },
+  {
+   "name": "Moon",
+   "position": "core"
+  },
+  {
+   "name": "iceiceice",
+   "position": "offlane"
+  },
+  {
+   "name": "Jabz",
+   "position": "support"
+  },
+  {
+   "name": "ninjaboogie",
+   "position": "support"
+  }
+ ],
+ "Vici Gaming": [
+  {
+   "name": "Paparazi灬",
+   "position": "core"
+  },
+  {
+   "name": "Ori",
+   "position": "core"
+  },
+  {
+   "name": "eLeVeN",
+   "position": "offlane"
+  },
+  {
+   "name": "LaNm",
+   "position": "support"
+  },
+  {
+   "name": "Fenrir",
+   "position": "support"
+  }
+ ],
+ "Newbee": [
+  {
+   "name": "Moogy",
+   "position": "core"
+  },
+  {
+   "name": "Sccc",
+   "position": "core"
+  },
+  {
+   "name": "kpii",
+   "position": "offlane"
+  },
+  {
+   "name": "Kaka",
+   "position": "support"
+  },
+  {
+   "name": "Faith",
+   "position": "support"
+  }
+ ],
+ "VGJ.Thunder": [
+  {
+   "name": "Sylar",
+   "position": "core"
+  },
+  {
+   "name": "Freeze",
+   "position": "core"
+  },
+  {
+   "name": "Yang",
+   "position": "offlane"
+  },
+  {
+   "name": "Fade",
+   "position": "support"
+  },
+  {
+   "name": "ddc",
+   "position": "support"
+  }
+ ],
+ "OG": [
+  {
+   "name": "ana",
+   "position": "core"
+  },
+  {
+   "name": "Topson",
+   "position": "core"
+  },
+  {
+   "name": "7ckngMad",
+   "position": "offlane"
+  },
+  {
+   "name": "JerAx",
+   "position": "support"
+  },
+  {
+   "name": "N0tail",
+   "position": "support"
+  }
+ ],
+ "Winstrike Team": [
+  {
+   "name": "Silent",
+   "position": "core"
+  },
+  {
+   "name": "Iceberg",
+   "position": "core"
+  },
+  {
+   "name": "nongrata",
+   "position": "offlane"
+  },
+  {
+   "name": "Nofear",
+   "position": "support"
+  },
+  {
+   "name": "ALWAYSWANNAFLY",
+   "position": "support"
+  }
+ ],
+ "Team Serenity": [
+  {
+   "name": "zhizhizhi",
+   "position": "core"
+  },
+  {
+   "name": "Zyd",
+   "position": "core"
+  },
+  {
+   "name": "XinQ",
+   "position": "offlane"
+  },
+  {
+   "name": "Pyw",
+   "position": "support"
+  },
+  {
+   "name": "XCJ",
+   "position": "support"
+  }
+ ],
+ "Invictus Gaming": [
+  {
+   "name": "Agressif",
+   "position": "core"
+  },
+  {
+   "name": "Xxs",
+   "position": "core"
+  },
+  {
+   "name": "Srf",
+   "position": "offlane"
+  },
+  {
+   "name": "BoBoKa",
+   "position": "support"
+  },
+  {
+   "name": "Q",
+   "position": "support"
+  }
+ ],
+ "Fnatic": [
+  {
+   "name": "EternaLEnVy",
+   "position": "core"
+  },
+  {
+   "name": "Abed",
+   "position": "core"
+  },
+  {
+   "name": "UNiVeRsE",
+   "position": "offlane"
+  },
+  {
+   "name": "DJ",
+   "position": "support"
+  },
+  {
+   "name": "pieliedie",
+   "position": "support"
+  }
+ ],
+ "TNC Predator": [
+  {
+   "name": "Raven",
+   "position": "core"
+  },
+  {
+   "name": "Armel",
+   "position": "core"
+  },
+  {
+   "name": "Sam_H",
+   "position": "offlane"
+  },
+  {
+   "name": "Tims",
+   "position": "support"
+  },
+  {
+   "name": "Kuku",
+   "position": "support"
+  }
+ ],
+ "VGJ.Storm": [
+  {
+   "name": "YawaR",
+   "position": "core"
+  },
+  {
+   "name": "Resolut1on",
+   "position": "core"
+  },
+  {
+   "name": "Sneyking",
+   "position": "offlane"
+  },
+  {
+   "name": "MSS",
+   "position": "support"
+  },
+  {
+   "name": "SVG",
+   "position": "support"
+  }
+ ],
+ "Evil Geniuses": [
+  {
+   "name": "Arteezy",
+   "position": "core"
+  },
+  {
+   "name": "SumaiL",
+   "position": "core"
+  },
+  {
+   "name": "s4",
+   "position": "offlane"
+  },
+  {
+   "name": "Cr1t-",
+   "position": "support"
+  },
+  {
+   "name": "Fly",
+   "position": "support"
+  }
+ ],
+ "OpTic Gaming": [
+  {
+   "name": "Pajkatt",
+   "position": "core"
+  },
+  {
+   "name": "CCnC",
+   "position": "core"
+  },
+  {
+   "name": "33",
+   "position": "offlane"
+  },
+  {
+   "name": "zai",
+   "position": "support"
+  },
+  {
+   "name": "Peterpandam",
+   "position": "support"
+  }
+ ],
+ "PaiN Gaming": [
+  {
+   "name": "hFn",
+   "position": "core"
+  },
+  {
+   "name": "w33",
+   "position": "core"
+  },
+  {
+   "name": "tavo",
+   "position": "offlane"
+  },
+  {
+   "name": "Kingrd",
+   "position": "support"
+  },
+  {
+   "name": "Duster",
+   "position": "support"
+  }
+ ]
+}
