@@ -6,47 +6,71 @@
         Fantasy Roster Manager
       </h1>
     </div>
-    <div class="field">
-      <div class="control">
-        <multiselect
-          class="input is-large is-rounded"
-          placeholder="Shortlisted teams..."
-          v-model="value"
-          :options="options"
-          :multiple="true"
-          >
-        </multiselect>
-      </div>
-    </div>
-    <div class="tabs is-centered is-large">
-      <a class="is-active">all</a>
-      <a>core</a>
-      <a>offlane</a>
-      <a>support</a>
-    </div>
+    <b-field>
+      <b-taginput
+        v-model="selectedTeams"
+        :data="teams"
+        autocomplete
+        icon="label"
+        type="is-dark"
+        placeholder="Shortlisted teams..."
+        @typing="getFilteredTeams">
+      </b-taginput>
+    </b-field>
+
+    <b-field>
+      <b-radio-button
+        v-for='(role, index) in roles'
+        :key='index'
+        v-model='selectedRoles'
+        :native-value='role'
+        type="is-dark">
+        <b-icon :icon="icons[role]"></b-icon>
+        <span>{{ role }}</span>
+      </b-radio-button>
+    </b-field>
+
     <ul>
-      <li>Player 1</li>
-      <li>Player 2</li>
-      <li>Player 3</li>
-      <li>Player 4</li>
-      <li>Player 5</li>
+      <li v-for='(team, index) in allTeams' :key='index'>{{ team }}</li>
     </ul>
   </section>
 </template>
 
 <script>
 import AppLogo from '~/components/AppLogo.vue'
-import Multiselect from 'vue-multiselect'
+
+const data = require('@/static/data.json')
+
+console.log(Object.keys(data))
 
 export default {
   components: {
-    AppLogo,
-    Multiselect
+    AppLogo
   },
   data () {
     return {
-      value: null,
-      options: ['Team 1', 'Team 2', 'Team 3']
+      teams: this.allTeams,
+      selectedTeams: [],
+      roles: ['all', 'core', 'offlane', 'support'],
+      selectedRoles: [],
+      icons: {
+        all: 'asterisk',
+        core: 'sword',
+        offlane: 'shield-half-full',
+        support: 'lifebuoy'
+      }
+    }
+  },
+  computed: {
+    allTeams: function () {
+      return Object.keys(data)
+    }
+  },
+  methods: {
+    getFilteredTeams(text) {
+      this.teams = this.allTeams.filter((option) => {
+          return option.toString().toLowerCase().indexOf(text.toLowerCase()) >= 0
+      })
     }
   }
 }
@@ -64,6 +88,10 @@ export default {
 .title {
   margin: 1rem auto 2rem;
   color: #a0a0a0;
+}
+.field {
+  min-width: 20rem;
+  max-width: 50rem;
 }
 </style>
 
