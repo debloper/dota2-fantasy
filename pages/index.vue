@@ -1,20 +1,25 @@
 <template>
-  <section class="container">
-    <div class="brand">
+<no-ssr>
+  <section class='container'>
+
+    <div class='brand'>
       <app-logo/>
-      <h1 class="title">
+      <h1 class='title'>
         Fantasy Roster Manager
       </h1>
     </div>
+
     <b-field>
       <b-taginput
-        v-model="selectedTeams"
-        :data="teams"
+        v-model='selectedTeams'
+        :data='availableTeams'
         autocomplete
-        icon="label"
-        type="is-dark"
-        placeholder="Shortlisted teams..."
-        @typing="getFilteredTeams">
+        icon='label'
+        type='is-dark'
+        size='is-large'
+        placeholder='Shortlisted teams...'
+        @input='setAvailableTeams'
+        @typing='getFilteredTeams'>
       </b-taginput>
     </b-field>
 
@@ -24,24 +29,24 @@
         :key='index'
         v-model='selectedRoles'
         :native-value='role'
-        type="is-dark">
-        <b-icon :icon="icons[role]"></b-icon>
+        type='is-dark'
+        size='is-large'>
+        <b-icon :icon='icons[role]'></b-icon>
         <span>{{ role }}</span>
       </b-radio-button>
     </b-field>
 
     <ul>
-      <li v-for='(team, index) in allTeams' :key='index'>{{ team }}</li>
+      <li v-for='(team, index) in teams' :key='index'>{{ team }}</li>
     </ul>
+
   </section>
+</no-ssr>
 </template>
 
 <script>
 import AppLogo from '~/components/AppLogo.vue'
-
-const data = require('@/static/data.json')
-
-console.log(Object.keys(data))
+import data from '~/static/data.json'
 
 export default {
   components: {
@@ -49,8 +54,8 @@ export default {
   },
   data () {
     return {
-      teams: this.allTeams,
       selectedTeams: [],
+      availableTeams: function () { return this.teams },
       roles: ['all', 'core', 'offlane', 'support'],
       selectedRoles: [],
       icons: {
@@ -62,14 +67,21 @@ export default {
     }
   },
   computed: {
-    allTeams: function () {
-      return Object.keys(data)
-    }
+      teams: function () { return Object.keys(data) }
   },
   methods: {
-    getFilteredTeams(text) {
-      this.teams = this.allTeams.filter((option) => {
-          return option.toString().toLowerCase().indexOf(text.toLowerCase()) >= 0
+    setAvailableTeams: function (selected) {
+      this.availableTeams = this.teams
+      for (let team of selected) {
+        if (this.availableTeams.indexOf(team) >= 0) {
+          this.availableTeams.splice(this.availableTeams.indexOf(team), 1)
+        }
+      }
+      console.log(this.availableTeams)
+    },
+    getFilteredTeams: function (text) {
+      this.availableTeams = this.teams.filter((team) => {
+          return team.toString().toLowerCase().indexOf(text.toLowerCase()) >= 0
       })
     }
   }
@@ -84,14 +96,16 @@ export default {
   justify-content: center;
   align-items: center;
   text-align: center;
+  padding: 2rem;
 }
 .title {
   margin: 1rem auto 2rem;
   color: #a0a0a0;
 }
-.field {
-  min-width: 20rem;
-  max-width: 50rem;
-}
+
+/* expand <field> contents */
+.field { width: 100%; }
+.control { flex-basis: 100%; }
+label.b-radio { width: 100%; }
 </style>
 
