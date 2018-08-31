@@ -24,438 +24,402 @@
     "offlane",
     "support"
   ],
-  "rosters": [
-    {
-      "Virtus.pro": [
-        {
-          "name": "RAMZES666",
-          "role": "core"
-        },
-        {
-          "name": "No[o]ne",
-          "role": "core"
-        },
-        {
-          "name": "9pasha",
-          "role": "offlane"
-        },
-        {
-          "name": "RodjER",
-          "role": "support"
-        },
-        {
-          "name": "Solo",
-          "role": "support"
-        }
-      ]
-    },
-    {
-      "Team Liquid": [
-        {
-          "name": "MATUMBAMAN",
-          "role": "core"
-        },
-        {
-          "name": "Miracle-",
-          "role": "core"
-        },
-        {
-          "name": "MinD_ContRoL",
-          "role": "offlane"
-        },
-        {
-          "name": "GH",
-          "role": "support"
-        },
-        {
-          "name": "KuroKy",
-          "role": "support"
-        }
-      ]
-    },
-    {
-      "PSG.LGD": [
-        {
-          "name": "Ame",
-          "role": "core"
-        },
-        {
-          "name": "Somnus丶M",
-          "role": "core"
-        },
-        {
-          "name": "Chalice",
-          "role": "offlane"
-        },
-        {
-          "name": "fy",
-          "role": "support"
-        },
-        {
-          "name": "xNova",
-          "role": "support"
-        }
-      ]
-    },
-    {
-      "Team Secret": [
-        {
-          "name": "Ace",
-          "role": "core"
-        },
-        {
-          "name": "MidOne",
-          "role": "core"
-        },
-        {
-          "name": "Fata",
-          "role": "offlane"
-        },
-        {
-          "name": "YapzOr",
-          "role": "support"
-        },
-        {
-          "name": "Puppey",
-          "role": "support"
-        }
-      ]
-    },
-    {
-      "Mineski": [
-        {
-          "name": "Mushi",
-          "role": "core"
-        },
-        {
-          "name": "Moon",
-          "role": "core"
-        },
-        {
-          "name": "iceiceice",
-          "role": "offlane"
-        },
-        {
-          "name": "Jabz",
-          "role": "support"
-        },
-        {
-          "name": "ninjaboogie",
-          "role": "support"
-        }
-      ]
-    },
-    {
-      "Vici Gaming": [
-        {
-          "name": "Paparazi灬",
-          "role": "core"
-        },
-        {
-          "name": "Ori",
-          "role": "core"
-        },
-        {
-          "name": "eLeVeN",
-          "role": "offlane"
-        },
-        {
-          "name": "LaNm",
-          "role": "support"
-        },
-        {
-          "name": "Fenrir",
-          "role": "support"
-        }
-      ]
-    },
-    {
-      "Newbee": [
-        {
-          "name": "Moogy",
-          "role": "core"
-        },
-        {
-          "name": "Sccc",
-          "role": "core"
-        },
-        {
-          "name": "kpii",
-          "role": "offlane"
-        },
-        {
-          "name": "Kaka",
-          "role": "support"
-        },
-        {
-          "name": "Faith",
-          "role": "support"
-        }
-      ]
-    },
-    {
-      "VGJ.Thunder": [
-        {
-          "name": "Sylar",
-          "role": "core"
-        },
-        {
-          "name": "Freeze",
-          "role": "core"
-        },
-        {
-          "name": "Yang",
-          "role": "offlane"
-        },
-        {
-          "name": "Fade",
-          "role": "support"
-        },
-        {
-          "name": "ddc",
-          "role": "support"
-        }
-      ]
-    },
-    {
-      "OG": [
-        {
-          "name": "ana",
-          "role": "core"
-        },
-        {
-          "name": "Topson",
-          "role": "core"
-        },
-        {
-          "name": "7ckngMad",
-          "role": "offlane"
-        },
-        {
-          "name": "JerAx",
-          "role": "support"
-        },
-        {
-          "name": "N0tail",
-          "role": "support"
-        }
-      ]
-    },
-    {
-      "Winstrike Team": [
-        {
-          "name": "Silent",
-          "role": "core"
-        },
-        {
-          "name": "Iceberg",
-          "role": "core"
-        },
-        {
-          "name": "nongrata",
-          "role": "offlane"
-        },
-        {
-          "name": "Nofear",
-          "role": "support"
-        },
-        {
-          "name": "ALWAYSWANNAFLY",
-          "role": "support"
-        }
-      ]
-    },
-    {
-      "Team Serenity": [
-        {
-          "name": "zhizhizhi",
-          "role": "core"
-        },
-        {
-          "name": "Zyd",
-          "role": "core"
-        },
-        {
-          "name": "XinQ",
-          "role": "offlane"
-        },
-        {
-          "name": "Pyw",
-          "role": "support"
-        },
-        {
-          "name": "XCJ",
-          "role": "support"
-        }
-      ]
-    },
-    {
-      "Invictus Gaming": [
-        {
-          "name": "Agressif",
-          "role": "core"
-        },
-        {
-          "name": "Xxs",
-          "role": "core"
-        },
-        {
-          "name": "Srf",
-          "role": "offlane"
-        },
-        {
-          "name": "BoBoKa",
-          "role": "support"
-        },
-        {
-          "name": "Q",
-          "role": "support"
-        }
-      ]
-    },
-    {
-      "Fnatic": [
-        {
-          "name": "EternaLEnVy",
-          "role": "core"
-        },
-        {
-          "name": "Abed",
-          "role": "core"
-        },
-        {
-          "name": "UNiVeRsE",
-          "role": "offlane"
-        },
-        {
-          "name": "DJ",
-          "role": "support"
-        },
-        {
-          "name": "pieliedie",
-          "role": "support"
-        }
-      ]
-    },
-    {
-      "TNC Predator": [
-        {
-          "name": "Raven",
-          "role": "core"
-        },
-        {
-          "name": "Armel",
-          "role": "core"
-        },
-        {
-          "name": "Sam_H",
-          "role": "offlane"
-        },
-        {
-          "name": "Tims",
-          "role": "support"
-        },
-        {
-          "name": "Kuku",
-          "role": "support"
-        }
-      ]
-    },
-    {
-      "VGJ.Storm": [
-        {
-          "name": "YawaR",
-          "role": "core"
-        },
-        {
-          "name": "Resolut1on",
-          "role": "core"
-        },
-        {
-          "name": "Sneyking",
-          "role": "offlane"
-        },
-        {
-          "name": "MSS",
-          "role": "support"
-        },
-        {
-          "name": "SVG",
-          "role": "support"
-        }
-      ]
-    },
-    {
-      "Evil Geniuses": [
-        {
-          "name": "Arteezy",
-          "role": "core"
-        },
-        {
-          "name": "SumaiL",
-          "role": "core"
-        },
-        {
-          "name": "s4",
-          "role": "offlane"
-        },
-        {
-          "name": "Cr1t-",
-          "role": "support"
-        },
-        {
-          "name": "Fly",
-          "role": "support"
-        }
-      ]
-    },
-    {
-      "OpTic Gaming": [
-        {
-          "name": "Pajkatt",
-          "role": "core"
-        },
-        {
-          "name": "CCnC",
-          "role": "core"
-        },
-        {
-          "name": "33",
-          "role": "offlane"
-        },
-        {
-          "name": "zai",
-          "role": "support"
-        },
-        {
-          "name": "Peterpandam Y-Y-Preview",
-          "role": "support"
-        }
-      ]
-    },
-    {
-      "PaiN Gaming": [
-        {
-          "name": "hFn",
-          "role": "core"
-        },
-        {
-          "name": "w33",
-          "role": "core"
-        },
-        {
-          "name": "tavo",
-          "role": "offlane"
-        },
-        {
-          "name": "Kingrd",
-          "role": "support"
-        },
-        {
-          "name": "Duster",
-          "role": "support"
-        }
-      ]
-    }
-  ]
+  "rosters": {
+    "Virtus.pro": [
+      {
+        "name": "RAMZES666",
+        "role": "core"
+      },
+      {
+        "name": "No[o]ne",
+        "role": "core"
+      },
+      {
+        "name": "9pasha",
+        "role": "offlane"
+      },
+      {
+        "name": "RodjER",
+        "role": "support"
+      },
+      {
+        "name": "Solo",
+        "role": "support"
+      }
+    ],
+    "Team Liquid": [
+      {
+        "name": "MATUMBAMAN",
+        "role": "core"
+      },
+      {
+        "name": "Miracle-",
+        "role": "core"
+      },
+      {
+        "name": "MinD_ContRoL",
+        "role": "offlane"
+      },
+      {
+        "name": "GH",
+        "role": "support"
+      },
+      {
+        "name": "KuroKy",
+        "role": "support"
+      }
+    ],
+    "PSG.LGD": [
+      {
+        "name": "Ame",
+        "role": "core"
+      },
+      {
+        "name": "Somnus丶M",
+        "role": "core"
+      },
+      {
+        "name": "Chalice",
+        "role": "offlane"
+      },
+      {
+        "name": "fy",
+        "role": "support"
+      },
+      {
+        "name": "xNova",
+        "role": "support"
+      }
+    ],
+    "Team Secret": [
+      {
+        "name": "Ace",
+        "role": "core"
+      },
+      {
+        "name": "MidOne",
+        "role": "core"
+      },
+      {
+        "name": "Fata",
+        "role": "offlane"
+      },
+      {
+        "name": "YapzOr",
+        "role": "support"
+      },
+      {
+        "name": "Puppey",
+        "role": "support"
+      }
+    ],
+    "Mineski": [
+      {
+        "name": "Mushi",
+        "role": "core"
+      },
+      {
+        "name": "Moon",
+        "role": "core"
+      },
+      {
+        "name": "iceiceice",
+        "role": "offlane"
+      },
+      {
+        "name": "Jabz",
+        "role": "support"
+      },
+      {
+        "name": "ninjaboogie",
+        "role": "support"
+      }
+    ],
+    "Vici Gaming": [
+      {
+        "name": "Paparazi灬",
+        "role": "core"
+      },
+      {
+        "name": "Ori",
+        "role": "core"
+      },
+      {
+        "name": "eLeVeN",
+        "role": "offlane"
+      },
+      {
+        "name": "LaNm",
+        "role": "support"
+      },
+      {
+        "name": "Fenrir",
+        "role": "support"
+      }
+    ],
+    "Newbee": [
+      {
+        "name": "Moogy",
+        "role": "core"
+      },
+      {
+        "name": "Sccc",
+        "role": "core"
+      },
+      {
+        "name": "kpii",
+        "role": "offlane"
+      },
+      {
+        "name": "Kaka",
+        "role": "support"
+      },
+      {
+        "name": "Faith",
+        "role": "support"
+      }
+    ],
+    "VGJ.Thunder": [
+      {
+        "name": "Sylar",
+        "role": "core"
+      },
+      {
+        "name": "Freeze",
+        "role": "core"
+      },
+      {
+        "name": "Yang",
+        "role": "offlane"
+      },
+      {
+        "name": "Fade",
+        "role": "support"
+      },
+      {
+        "name": "ddc",
+        "role": "support"
+      }
+    ],
+    "OG": [
+      {
+        "name": "ana",
+        "role": "core"
+      },
+      {
+        "name": "Topson",
+        "role": "core"
+      },
+      {
+        "name": "7ckngMad",
+        "role": "offlane"
+      },
+      {
+        "name": "JerAx",
+        "role": "support"
+      },
+      {
+        "name": "N0tail",
+        "role": "support"
+      }
+    ],
+    "Winstrike Team": [
+      {
+        "name": "Silent",
+        "role": "core"
+      },
+      {
+        "name": "Iceberg",
+        "role": "core"
+      },
+      {
+        "name": "nongrata",
+        "role": "offlane"
+      },
+      {
+        "name": "Nofear",
+        "role": "support"
+      },
+      {
+        "name": "ALWAYSWANNAFLY",
+        "role": "support"
+      }
+    ],
+    "Team Serenity": [
+      {
+        "name": "zhizhizhi",
+        "role": "core"
+      },
+      {
+        "name": "Zyd",
+        "role": "core"
+      },
+      {
+        "name": "XinQ",
+        "role": "offlane"
+      },
+      {
+        "name": "Pyw",
+        "role": "support"
+      },
+      {
+        "name": "XCJ",
+        "role": "support"
+      }
+    ],
+    "Invictus Gaming": [
+      {
+        "name": "Agressif",
+        "role": "core"
+      },
+      {
+        "name": "Xxs",
+        "role": "core"
+      },
+      {
+        "name": "Srf",
+        "role": "offlane"
+      },
+      {
+        "name": "BoBoKa",
+        "role": "support"
+      },
+      {
+        "name": "Q",
+        "role": "support"
+      }
+    ],
+    "Fnatic": [
+      {
+        "name": "EternaLEnVy",
+        "role": "core"
+      },
+      {
+        "name": "Abed",
+        "role": "core"
+      },
+      {
+        "name": "UNiVeRsE",
+        "role": "offlane"
+      },
+      {
+        "name": "DJ",
+        "role": "support"
+      },
+      {
+        "name": "pieliedie",
+        "role": "support"
+      }
+    ],
+    "TNC Predator": [
+      {
+        "name": "Raven",
+        "role": "core"
+      },
+      {
+        "name": "Armel",
+        "role": "core"
+      },
+      {
+        "name": "Sam_H",
+        "role": "offlane"
+      },
+      {
+        "name": "Tims",
+        "role": "support"
+      },
+      {
+        "name": "Kuku",
+        "role": "support"
+      }
+    ],
+    "VGJ.Storm": [
+      {
+        "name": "YawaR",
+        "role": "core"
+      },
+      {
+        "name": "Resolut1on",
+        "role": "core"
+      },
+      {
+        "name": "Sneyking",
+        "role": "offlane"
+      },
+      {
+        "name": "MSS",
+        "role": "support"
+      },
+      {
+        "name": "SVG",
+        "role": "support"
+      }
+    ],
+    "Evil Geniuses": [
+      {
+        "name": "Arteezy",
+        "role": "core"
+      },
+      {
+        "name": "SumaiL",
+        "role": "core"
+      },
+      {
+        "name": "s4",
+        "role": "offlane"
+      },
+      {
+        "name": "Cr1t-",
+        "role": "support"
+      },
+      {
+        "name": "Fly",
+        "role": "support"
+      }
+    ],
+    "OpTic Gaming": [
+      {
+        "name": "Pajkatt",
+        "role": "core"
+      },
+      {
+        "name": "CCnC",
+        "role": "core"
+      },
+      {
+        "name": "33",
+        "role": "offlane"
+      },
+      {
+        "name": "zai",
+        "role": "support"
+      },
+      {
+        "name": "Peterpandam Y-Y-Preview",
+        "role": "support"
+      }
+    ],
+    "PaiN Gaming": [
+      {
+        "name": "hFn",
+        "role": "core"
+      },
+      {
+        "name": "w33",
+        "role": "core"
+      },
+      {
+        "name": "tavo",
+        "role": "offlane"
+      },
+      {
+        "name": "Kingrd",
+        "role": "support"
+      },
+      {
+        "name": "Duster",
+        "role": "support"
+      }
+    ]
+  }
 }

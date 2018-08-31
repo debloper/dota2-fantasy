@@ -17,7 +17,7 @@ const url = 'https://liquipedia.net/dota2/The_International/2018'
 // Initializing the primary sets of information we're looking for
 let teams = []
 let roles = ['core', 'core', 'offlane', 'support', 'support']
-let rosters = []
+let rosters = {}
 
 // Let's get to it, and fetch the URL
 request.get(url, (error, response, body) => {
@@ -61,9 +61,7 @@ request.get(url, (error, response, body) => {
 
     // And, after each successful roster parsing
     // Pick the teams & put the details in order
-    rosters.push({
-      [teams[key]]: players
-    })
+    rosters[teams[key]] = players
   })
 
   // That's it... we have everything we need!
