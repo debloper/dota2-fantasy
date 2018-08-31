@@ -2,76 +2,78 @@
 
 /**
  * Mohamed Sohail <sohailsameja@gmail.com>
+ * Soumya Deb <debloper@gmail.com>
  * 
- * Usage: npm run scraper
- * 
- * Args: --minify : Dump a minified JSON output
+ * Usage: `./scraper`
+ * Requires Node.js v8.x+
  */
 
-const cheerio = require("cheerio");
-const request = require("request-promise-native");
+const cheerio = require('cheerio')
+const request = require('request')
 
-const baseUrl = "https://liquipedia.net/dota2/The_International/2018";
+// Page to fetch data from
+const url = 'https://liquipedia.net/dota2/The_International/2018'
 
-const rawTeams= [];
-const rawPlayers = [];
-const teams = [];
-const dataObject = {};
+// Initializing the primary sets of information we're looking for
+let teams = []
+let roles = ['core', 'core', 'offlane', 'support', 'support']
+let rosters = []
 
-function main(done) {
-    // scrape data from liquidpedia
-    request.get(baseUrl).then(res => {
-        const $ = cheerio.load(res);
+// Let's get to it, and fetch the URL
+request.get(url, (error, response, body) => {
 
-        $(".teamcard center a").each((key, value) => {
-            rawTeams.push($(value).attr("title"));
-        });
+  // N.B: as this script is only meant to be used by the
+  //      repo maintainer, we can ignore error handling.
 
-        $(".table.table-bordered.list").each((key, value) => {
-            // parse data and store remporarily
-            const teamData = $(value).text().split(/(.+\s5\s\S*)/ig)[1];
-            const teamPlayers = teamData.split(/(\d\s\S*)/ig);
+  // Read the response body, and load it up as DOM
+  const $ = cheerio.load(body)
 
-            teamPlayers.forEach((value, index) => {
-                if (value.length > 1) {
-                    const string = value.split(/\s/g);
-                    let pos;
-                    
-                    switch (string[0]) {
-                        case "1": pos = "core"; break;
-                        case "2": pos = "core"; break;
-                        case "3": pos = "offlane"; break;
-                        case "4": pos = "support"; break;
-                        case "5": pos = "support"; break;
-                    }
+  // Listing the names of the teams by selector
+  $('.teamcard center a').each((key, value) => {
+    teams.push($(value).attr('title'))
+  })
 
-                    const object = {
-                        name: string[1],
-                        position: pos
-                    }
+  // `value` here is a whitespace separated player names
+  // It's taken from the table of team roster, flattened
+  // Contains extra details such as Coach, Standing etc.
+  $('.table.table-bordered.list').each((key, value) => {
 
-                    rawPlayers.push(object);
-                }
-            });
-        });
+    // We turn the `value` into an array of player names
+    let players = $(value).find('td').text().trim().split('  ')
 
-        return done(true);
-    })
-};
+    // We're only looking for the first 5 items i.e. players
+    players.length = 5
 
-main(next => {
-    // assign team name key to every array of players
-    for(let i = 0; i < rawTeams.length; i++) {
-        teams.push(rawPlayers.slice(i * 5, i * 5 + 5));
-    };
+    // Here's where we iterate over the list of players
+    // Extract their roles by the player index (Pos 1 to 5)
+    for (let player in players) {
+      let name = players[player]
+      let role = roles[player]
 
-    for(let j = 0; j < teams.length; j++) {
-        dataObject[rawTeams[j]] = teams[j];
-    };
-
-    if (process.argv.slice(2)[0] === "--minify") {
-        return console.log(JSON.stringify(dataObject));
-    } else {
-        return console.log(JSON.stringify(dataObject, null, " "));
+      // Then we push the player name and roles as an object
+      // Back into the `players` list, at the same key/index
+      // Turning the list of strings into a list of objects.
+      players[player] = {
+        name: name,
+        role: role
+      }
     }
-});
+
+    // And, after each successful roster parsing
+    // Pick the teams & put the details in order
+    rosters.push({
+      [teams[key]]: players
+    })
+  })
+
+  // That's it... we have everything we need!
+  // Just need to treeshake the roles list a bit
+  // And pack the data into a nice little struct
+  console.log(JSON.stringify({
+    teams: teams,
+    roles: [...new Set(roles)],
+    rosters: rosters
+  }, null, '  '))
+
+  // And, we're done!
+})
