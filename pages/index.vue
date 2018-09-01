@@ -27,7 +27,7 @@
       <b-radio-button
         v-for='(role, index) in roles'
         :key='index'
-        v-model='selectedRoles'
+        v-model='selectedRole'
         :native-value='role'
         type='is-dark'
         size='is-large'>
@@ -36,9 +36,13 @@
       </b-radio-button>
     </b-field>
 
-    <ul>
-      <li v-for='(team, index) in teams' :key='index'>{{ team }}</li>
-    </ul>
+    <div class="content">
+      <div class='card is-inline-block' v-for='(value, key) in shortlistedPlayers' :key='key'>
+        <div class='card-header-title'>
+          {{ value }}
+        </div>
+      </div>
+    </div>
 
   </section>
 </no-ssr>
@@ -46,7 +50,7 @@
 
 <script>
 import AppLogo from '~/components/AppLogo.vue'
-import data from '~/static/data.json'
+import payload from '~/static/data.json'
 
 export default {
   components: {
@@ -54,10 +58,12 @@ export default {
   },
   data () {
     return {
+      teams: payload.teams,
       selectedTeams: [],
-      availableTeams: function () { return this.teams },
-      roles: ['all', 'core', 'offlane', 'support'],
-      selectedRoles: [],
+      availableTeams: this.teams,
+      roles: ['all'].concat(payload.roles),
+      selectedRole: '',
+      rosters: payload.rosters,
       icons: {
         all: 'asterisk',
         core: 'sword',
@@ -67,17 +73,30 @@ export default {
     }
   },
   computed: {
-      teams: function () { return Object.keys(data) }
+    shortlistedPlayers: function () {
+      let players = []
+
+      for (let team of this.selectedTeams) {
+        for (let player of this.rosters[team]) {
+          let role = this.selectedRole.toString()
+          if (role === 'all' || role === player.role || !role) {
+            players.push(player.name)
+          }
+        }
+      }
+
+      return players
+    }
   },
   methods: {
     setAvailableTeams: function (selected) {
       this.availableTeams = this.teams
       for (let team of selected) {
-        if (this.availableTeams.indexOf(team) >= 0) {
-          this.availableTeams.splice(this.availableTeams.indexOf(team), 1)
+        let teamIndex = this.availableTeams.indexOf(team)
+        if (teamIndex >= 0) {
+          this.availableTeams.splice(teamIndex, 1)
         }
       }
-      console.log(this.availableTeams)
     },
     getFilteredTeams: function (text) {
       this.availableTeams = this.teams.filter((team) => {
@@ -107,5 +126,13 @@ export default {
 .field { width: 100%; }
 .control { flex-basis: 100%; }
 label.b-radio { width: 100%; }
+
+.content {
+  margin-top: 2rem;
+}
+.card.is-inline-block {
+  width: 10rem;
+  min-width: 10rem;
+}
 </style>
 
