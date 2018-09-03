@@ -9,6 +9,8 @@
     "build": "nuxt build",
     "start": "nuxt start",
     "generate": "nuxt generate",
+    "generate:local": "BASE_PATH=/dist/ nuxt generate",
+    "generate:github": "BASE_PATH=/d2f/ nuxt generate",
     "lint": "eslint --ext .js,.vue --ignore-path .gitignore .",
     "scraper": "bin/scraper > static/data.json",
     "precommit": "npm run lint"

@@ -50,7 +50,7 @@
 
 <script>
 import AppLogo from '~/components/AppLogo.vue'
-import payload from '~/static/data.json'
+import payload from '~/assets/data.json'
 
 export default {
   components: {

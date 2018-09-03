@@ -23,6 +23,9 @@ module.exports = {
   modules: [
     'nuxt-buefy'
   ],
+  router: {
+    base: process.env.BASE_PATH ?  process.env.BASE_PATH : ''
+  },
   /*
   ** Build configuration
   */
@@ -30,6 +33,14 @@ module.exports = {
     /*
     ** Run ESLint on save
     */
+    extractCSS: true,
+    filenames: {
+      css: 'style.css',
+      manifest: 'manifest.js',
+      vendor: 'vendor.js',
+      app: 'app.js',
+      chunk: '[name].js'
+    },
     extend (config, { isDev, isClient }) {
       if (isDev && isClient) {
         config.module.rules.push({

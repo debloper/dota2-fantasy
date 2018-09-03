@@ -1,5 +1,5 @@
 <template>
-  <img src="~/static/ti.png" />
+  <img src="ti.png" />
 </template>
 
 <style>
