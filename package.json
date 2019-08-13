@@ -15,8 +15,8 @@
     "precommit": "npm run lint"
   },
   "dependencies": {
-    "nuxt": "^1.4.5",
-    "nuxt-buefy": "^0.1.2",
+    "nuxt": "^2.8.1",
+    "nuxt-buefy": "^0.3.13",
     "vue-multiselect": "^2.1.6"
   },
   "devDependencies": {

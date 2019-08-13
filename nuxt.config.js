@@ -35,14 +35,14 @@ module.exports = {
     */
     extractCSS: true,
     filenames: {
-      css: 'style.css',
+      css: '[name].css',
       manifest: 'manifest.js',
       vendor: 'vendor.js',
-      app: 'app.js',
+      app: '[name].js',
       chunk: '[name].js'
     },
-    extend (config, { isDev, isClient }) {
-      if (isDev && isClient) {
+    extend (config, { isDev }) {
+      if (isDev && process.client) {
         config.module.rules.push({
           enforce: 'pre',
           test: /\.(js|vue)$/,
