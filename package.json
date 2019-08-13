@@ -11,7 +11,7 @@
     "lint": "eslint --ext .js,.vue --ignore-path .gitignore .",
     "generate": "BASE_PATH=/dist/ nuxt generate",
     "publish": "BASE_PATH=/dota2-fantasy/ nuxt generate && NODE_DEBUG=gh-pages npx gh-pages -td dist -m `date -u +%Y-%m-%d.%T.%Z`",
-    "scraper": "bin/scraper > static/data.json",
+    "scraper": "bin/scraper > assets/data.json",
     "precommit": "npm run lint"
   },
   "dependencies": {
