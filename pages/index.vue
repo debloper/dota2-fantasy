@@ -38,8 +38,13 @@
     </b-field>
 
     <div class="content">
-      <div class='card is-inline-block' v-for='(value, key) in shortlistedPlayers' :key='key'>
-        <div class='card-header-title'>
+      <div class="card is-inline-block" v-for='(value, key) in shortlistedPlayers' :key='key'>
+        <div class="card-image">
+          <figure class="image">
+            <img v-bind:src="'players/' + value + '.png'" v-bind:alt="value">
+          </figure>
+        </div>
+        <div class="title is-5">
           {{ value }}
         </div>
       </div>
@@ -133,7 +138,15 @@ label.b-radio { width: 100%; }
 }
 .card.is-inline-block {
   width: 10rem;
-  min-width: 10rem;
+  margin: 1rem;
+  border-radius: 0.25rem;
+}
+.card .title {
+  color: #444;
+  margin: 0.5rem auto 1rem;
+}
+.content figure {
+  margin: 1rem 0 0;
 }
 </style>
 
