@@ -47,7 +47,7 @@ request.get(url, (error, response, body) => {
     // Here's where we iterate over the list of players
     // Extract their roles by the player index (Pos 1 to 5)
     for (let player in players) {
-      let name = players[player]
+      let name = players[player].replace(/[^\x00-\x7F]/g, "")
       let role = roles[player]
 
       // Then we push the player name and roles as an object
@@ -55,7 +55,8 @@ request.get(url, (error, response, body) => {
       // Turning the list of strings into a list of objects.
       players[player] = {
         name: name,
-        role: role
+        role: role,
+        icon: [name, ".png"].join("")
       }
     }
 
@@ -74,4 +75,7 @@ request.get(url, (error, response, body) => {
   }, null, '  '))
 
   // And, we're done!
+
+  // Though some player names may require manual
+  // editing because of funky unicode characters
 })

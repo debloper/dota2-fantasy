@@ -3,11 +3,11 @@ module.exports = {
   ** Headers of the page
   */
   head: {
-    title: 'Dota 2 #TI8 Fantasy Roster Manager',
+    title: 'Dota 2 #TI Fantasy Roster Manager',
     meta: [
       { charset: 'utf-8' },
       { name: 'viewport', content: 'width=device-width, initial-scale=1' },
-      { hid: 'description', name: 'description', content: 'Dota 2 #TI8 Fantasy Roster Manager' }
+      { name: 'description', content: 'Dota 2 #TI Fantasy Roster Manager' }
     ],
     link: [
       { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }

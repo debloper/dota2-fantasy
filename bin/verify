@@ -1,0 +1,22 @@
+#!/usr/bin/env node
+
+/**
+ * Soumya Deb <debloper@gmail.com>
+ *
+ * Usage: `./verify`
+ *
+ * Verifies if all the player icon file names are
+ * consistent with the player names in data.json
+ */
+
+const file = require('fs')
+const path = __dirname + '/../assets/players'
+const data = require('../assets/data.json')
+
+for (let team in data.rosters) {
+  for (let player of data.rosters[team]) {
+    file.exists([path, '/', player.icon].join(''), e => {
+      if (!e) console.log(player.icon)
+    })
+  }
+}

@@ -13,6 +13,7 @@
       <b-taginput
         v-model='selectedTeams'
         :data='availableTeams'
+        autofocus
         autocomplete
         icon='label'
         type='is-dark'
@@ -66,8 +67,8 @@ export default {
       rosters: payload.rosters,
       icons: {
         all: 'asterisk',
+        mid: 'arrow-collapse',
         core: 'sword',
-        offlane: 'shield-half-full',
         support: 'lifebuoy'
       }
     }

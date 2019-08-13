@@ -28,397 +28,487 @@
     "Team Secret": [
       {
         "name": "Nisha",
-        "role": "core"
+        "role": "core",
+        "icon": "Nisha.png"
       },
       {
         "name": "MidOne",
-        "role": "mid"
+        "role": "mid",
+        "icon": "MidOne.png"
       },
       {
         "name": "zai",
-        "role": "core"
+        "role": "core",
+        "icon": "zai.png"
       },
       {
         "name": "YapzOr",
-        "role": "support"
+        "role": "support",
+        "icon": "YapzOr.png"
       },
       {
         "name": "Puppey",
-        "role": "support"
+        "role": "support",
+        "icon": "Puppey.png"
       }
     ],
     "Virtus.pro": [
       {
         "name": "RAMZES666",
-        "role": "core"
+        "role": "core",
+        "icon": "RAMZES666.png"
       },
       {
         "name": "No[o]ne",
-        "role": "mid"
+        "role": "mid",
+        "icon": "No[o]ne.png"
       },
       {
         "name": "9pasha",
-        "role": "core"
+        "role": "core",
+        "icon": "9pasha.png"
       },
       {
         "name": "RodjER",
-        "role": "support"
+        "role": "support",
+        "icon": "RodjER.png"
       },
       {
         "name": "Solo",
-        "role": "support"
+        "role": "support",
+        "icon": "Solo.png"
       }
     ],
     "Vici Gaming": [
       {
-        "name": "Paparazi灬",
-        "role": "core"
+        "name": "Paparazi",
+        "role": "core",
+        "icon": "Paparazi.png"
       },
       {
         "name": "Ori",
-        "role": "mid"
+        "role": "mid",
+        "icon": "Ori.png"
       },
       {
         "name": "Yang",
-        "role": "core"
+        "role": "core",
+        "icon": "Yang.png"
       },
       {
         "name": "Fade",
-        "role": "support"
+        "role": "support",
+        "icon": "Fade.png"
       },
       {
         "name": "Dy",
-        "role": "support"
+        "role": "support",
+        "icon": "Dy.png"
       }
     ],
     "Evil Geniuses": [
       {
         "name": "Arteezy",
-        "role": "core"
+        "role": "core",
+        "icon": "Arteezy.png"
       },
       {
         "name": "SumaiL",
-        "role": "mid"
+        "role": "mid",
+        "icon": "SumaiL.png"
       },
       {
         "name": "s4",
-        "role": "core"
+        "role": "core",
+        "icon": "s4.png"
       },
       {
         "name": "Cr1t-",
-        "role": "support"
+        "role": "support",
+        "icon": "Cr1t-.png"
       },
       {
         "name": "Fly",
-        "role": "support"
+        "role": "support",
+        "icon": "Fly.png"
       }
     ],
     "Team Liquid": [
       {
         "name": "Miracle-",
-        "role": "core"
+        "role": "core",
+        "icon": "Miracle-.png"
       },
       {
         "name": "w33",
-        "role": "mid"
+        "role": "mid",
+        "icon": "w33.png"
       },
       {
         "name": "MinD_ContRoL",
-        "role": "core"
+        "role": "core",
+        "icon": "MinD_ContRoL.png"
       },
       {
         "name": "GH",
-        "role": "support"
+        "role": "support",
+        "icon": "GH.png"
       },
       {
         "name": "KuroKy",
-        "role": "support"
+        "role": "support",
+        "icon": "KuroKy.png"
       }
     ],
     "PSG.LGD": [
       {
         "name": "Ame",
-        "role": "core"
+        "role": "core",
+        "icon": "Ame.png"
       },
       {
-        "name": "Somnus丶M",
-        "role": "mid"
+        "name": "SomnusM",
+        "role": "mid",
+        "icon": "SomnusM.png"
       },
       {
         "name": "Chalice",
-        "role": "core"
+        "role": "core",
+        "icon": "Chalice.png"
       },
       {
         "name": "fy",
-        "role": "support"
+        "role": "support",
+        "icon": "fy.png"
       },
       {
         "name": "xNova",
-        "role": "support"
+        "role": "support",
+        "icon": "xNova.png"
       }
     ],
     "Fnatic": [
       {
         "name": "Jabz",
-        "role": "core"
+        "role": "core",
+        "icon": "Jabz.png"
       },
       {
         "name": "Abed",
-        "role": "mid"
+        "role": "mid",
+        "icon": "Abed.png"
       },
       {
         "name": "iceiceice",
-        "role": "core"
+        "role": "core",
+        "icon": "iceiceice.png"
       },
       {
         "name": "DJ",
-        "role": "support"
+        "role": "support",
+        "icon": "DJ.png"
       },
       {
         "name": "DuBu",
-        "role": "support"
+        "role": "support",
+        "icon": "DuBu.png"
       }
     ],
     "Ninjas in Pyjamas": [
       {
         "name": "Ace",
-        "role": "core"
+        "role": "core",
+        "icon": "Ace.png"
       },
       {
         "name": "Fata",
-        "role": "mid"
+        "role": "mid",
+        "icon": "Fata.png"
       },
       {
         "name": "33",
-        "role": "core"
+        "role": "core",
+        "icon": "33.png"
       },
       {
         "name": "Saksa",
-        "role": "support"
+        "role": "support",
+        "icon": "Saksa.png"
       },
       {
         "name": "ppd",
-        "role": "support"
+        "role": "support",
+        "icon": "ppd.png"
       }
     ],
     "TNC Predator": [
       {
         "name": "Gabbi",
-        "role": "core"
+        "role": "core",
+        "icon": "Gabbi.png"
       },
       {
         "name": "Armel",
-        "role": "mid"
+        "role": "mid",
+        "icon": "Armel.png"
       },
       {
         "name": "Kuku",
-        "role": "core"
+        "role": "core",
+        "icon": "Kuku.png"
       },
       {
         "name": "Tims",
-        "role": "support"
+        "role": "support",
+        "icon": "Tims.png"
       },
       {
         "name": "Eyyou",
-        "role": "support"
+        "role": "support",
+        "icon": "Eyyou.png"
       }
     ],
     "OG": [
       {
         "name": "ana",
-        "role": "core"
+        "role": "core",
+        "icon": "ana.png"
       },
       {
         "name": "Topson",
-        "role": "mid"
+        "role": "mid",
+        "icon": "Topson.png"
       },
       {
         "name": "7ckngMad",
-        "role": "core"
+        "role": "core",
+        "icon": "7ckngMad.png"
       },
       {
         "name": "JerAx",
-        "role": "support"
+        "role": "support",
+        "icon": "JerAx.png"
       },
       {
         "name": "N0tail",
-        "role": "support"
+        "role": "support",
+        "icon": "N0tail.png"
       }
     ],
     "Alliance": [
       {
         "name": "miCKe",
-        "role": "core"
+        "role": "core",
+        "icon": "miCKe.png"
       },
       {
         "name": "qojqva",
-        "role": "mid"
+        "role": "mid",
+        "icon": "qojqva.png"
       },
       {
         "name": "Boxi",
-        "role": "core"
+        "role": "core",
+        "icon": "Boxi.png"
       },
       {
         "name": "Taiga",
-        "role": "support"
+        "role": "support",
+        "icon": "Taiga.png"
       },
       {
         "name": "iNSaNiA",
-        "role": "support"
+        "role": "support",
+        "icon": "iNSaNiA.png"
       }
     ],
     "Keen Gaming": [
       {
         "name": "old chicken",
-        "role": "core"
+        "role": "core",
+        "icon": "old chicken.png"
       },
       {
-        "name": "一",
-        "role": "mid"
+        "name": "-",
+        "role": "mid",
+        "icon": "-.png"
       },
       {
         "name": "eLeVeN",
-        "role": "core"
+        "role": "core",
+        "icon": "eLeVeN.png"
       },
       {
         "name": "Kaka",
-        "role": "support"
+        "role": "support",
+        "icon": "Kaka.png"
       },
       {
         "name": "dark",
-        "role": "support"
+        "role": "support",
+        "icon": "dark.png"
       }
     ],
     "Newbee": [
       {
         "name": "YawaR",
-        "role": "core"
+        "role": "core",
+        "icon": "YawaR.png"
       },
       {
         "name": "CCnC",
-        "role": "mid"
+        "role": "mid",
+        "icon": "CCnC.png"
       },
       {
         "name": "Sneyking",
-        "role": "core"
+        "role": "core",
+        "icon": "Sneyking.png"
       },
       {
         "name": "MSS",
-        "role": "support"
+        "role": "support",
+        "icon": "MSS.png"
       },
       {
         "name": "pieliedie",
-        "role": "support"
+        "role": "support",
+        "icon": "pieliedie.png"
       }
     ],
     "Infamous": [
       {
         "name": "K1",
-        "role": "core"
+        "role": "core",
+        "icon": "K1.png"
       },
       {
         "name": "Chris Luck",
-        "role": "mid"
+        "role": "mid",
+        "icon": "Chris Luck.png"
       },
       {
         "name": "Wisper",
-        "role": "core"
+        "role": "core",
+        "icon": "Wisper.png"
       },
       {
         "name": "Scofield",
-        "role": "support"
+        "role": "support",
+        "icon": "Scofield.png"
       },
       {
         "name": "Stinger",
-        "role": "support"
+        "role": "support",
+        "icon": "Stinger.png"
       }
     ],
     "Chaos Esports Club": [
       {
-        "name": "vtFαded",
-        "role": "core"
+        "name": "vtFaded",
+        "role": "core",
+        "icon": "vtFaded.png"
       },
       {
         "name": "MATUMBAMAN",
-        "role": "mid"
+        "role": "mid",
+        "icon": "MATUMBAMAN.png"
       },
       {
         "name": "KheZu",
-        "role": "core"
+        "role": "core",
+        "icon": "KheZu.png"
       },
       {
         "name": "MiLAN",
-        "role": "support"
+        "role": "support",
+        "icon": "MiLAN.png"
       },
       {
         "name": "MISERY",
-        "role": "support"
+        "role": "support",
+        "icon": "MISERY.png"
       }
     ],
     "Natus Vincere": [
       {
         "name": "Crystallize",
-        "role": "core"
+        "role": "core",
+        "icon": "Crystallize.png"
       },
       {
         "name": "MagicaL",
-        "role": "mid"
+        "role": "mid",
+        "icon": "MagicaL.png"
       },
       {
         "name": "Blizzy",
-        "role": "core"
+        "role": "core",
+        "icon": "Blizzy.png"
       },
       {
         "name": "Zayac",
-        "role": "support"
+        "role": "support",
+        "icon": "Zayac.png"
       },
       {
         "name": "SoNNeikO",
-        "role": "support"
+        "role": "support",
+        "icon": "SoNNeikO.png"
       }
     ],
     "Royal Never Give Up": [
       {
         "name": "Monet",
-        "role": "core"
+        "role": "core",
+        "icon": "Monet.png"
       },
       {
         "name": "Setsu",
-        "role": "mid"
+        "role": "mid",
+        "icon": "Setsu.png"
       },
       {
         "name": "Flyby",
-        "role": "core"
+        "role": "core",
+        "icon": "Flyby.png"
       },
       {
         "name": "LaNm",
-        "role": "support"
+        "role": "support",
+        "icon": "LaNm.png"
       },
       {
         "name": "ah fu",
-        "role": "support"
+        "role": "support",
+        "icon": "ah fu.png"
       }
     ],
     "Mineski": [
       {
         "name": "Nikobaby",
-        "role": "core"
+        "role": "core",
+        "icon": "Nikobaby.png"
       },
       {
         "name": "Moon",
-        "role": "mid"
+        "role": "mid",
+        "icon": "Moon.png"
       },
       {
         "name": "kpii",
-        "role": "core"
+        "role": "core",
+        "icon": "kpii.png"
       },
       {
         "name": "Bimbo",
-        "role": "support"
+        "role": "support",
+        "icon": "Bimbo.png"
       },
       {
         "name": "ninjaboogie",
-        "role": "support"
+        "role": "support",
+        "icon": "ninjaboogie.png"
       }
     ]
   }
