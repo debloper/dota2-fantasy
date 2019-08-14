@@ -18,7 +18,7 @@
         icon='label'
         type='is-dark'
         size='is-large'
-        placeholder='Shortlisted teams...'
+        placeholder='Type team names to shortlist...'
         @input='setAvailableTeams'
         @typing='getFilteredTeams'>
       </b-taginput>
@@ -38,17 +38,25 @@
     </b-field>
 
     <div class="content">
-      <div class="card is-inline-block" v-for='(value, key) in shortlistedPlayers' :key='key'>
+      <div class="card has-background-light is-inline-block" v-for='(value, key) in shortlistedPlayers' :key='key'>
         <div class="card-image">
           <figure class="image">
-            <img v-bind:src="'players/' + value + '.png'" v-bind:alt="value">
+            <img v-bind:src="'players/' + value.icon" v-bind:alt="value.name">
           </figure>
         </div>
         <div class="title is-5">
-          {{ value }}
+          {{ value.name }}
+        </div>
+        <div class="subtitle is-7">
+          {{ value.team }}
         </div>
       </div>
     </div>
+
+    <footer class="content is-small">
+      Dota 2 is registered trademark of Valve Corporation.<br />
+      Dota 2 logo, The International logo & player images credit Valve Corporation.
+    </footer>
 
   </section>
 </no-ssr>
@@ -85,8 +93,9 @@ export default {
       for (let team of this.selectedTeams) {
         for (let player of this.rosters[team]) {
           let role = this.selectedRole.toString()
+          player.team = team
           if (role === 'all' || role === player.role || !role) {
-            players.push(player.name)
+            players.push(player)
           }
         }
       }
@@ -143,10 +152,13 @@ label.b-radio { width: 100%; }
 }
 .card .title {
   color: #444;
-  margin: 0.5rem auto 1rem;
+  margin: 0.25rem auto 1rem;
+}
+.card .subtitle.is-7 {
+  padding-top: 0.25rem;
+  margin-bottom: 0.75rem;
 }
 .content figure {
   margin: 1rem 0 0;
 }
 </style>
-
