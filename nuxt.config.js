@@ -21,7 +21,8 @@ module.exports = {
   ** Load external modules
   */
   modules: [
-    'nuxt-buefy'
+    'nuxt-buefy',
+    ['@nuxtjs/google-analytics', { id: 'UA-145699713-1' }]
   ],
   router: {
     base: process.env.BASE_PATH ?  process.env.BASE_PATH : ''
