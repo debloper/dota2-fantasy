@@ -12,6 +12,7 @@
     "generate": "BASE_PATH=/dist/ nuxt generate",
     "publish": "BASE_PATH=/dota2-fantasy/ nuxt generate && NODE_DEBUG=gh-pages npx gh-pages -td dist -m `date -u +%Y-%m-%d.%T.%Z`",
     "scraper": "bin/scraper > assets/data.json",
+    "verifier": "bin/verifier",
     "precommit": "npm run lint"
   },
   "dependencies": {

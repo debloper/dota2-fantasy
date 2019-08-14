@@ -50,6 +50,11 @@
         <div class="subtitle is-7">
           {{ value.team }}
         </div>
+        <div class="list">
+          <div class="list-item" v-for="(bonus, index) in value.bonus" :key="index">
+            {{ bonus }}
+          </div>
+        </div>
       </div>
     </div>
 
@@ -65,6 +70,7 @@
 <script>
 import AppLogo from '~/components/AppLogo.vue'
 import payload from '~/assets/data.json'
+import bonuses from '~/assets/stat.json'
 
 export default {
   components: {
@@ -94,6 +100,7 @@ export default {
         for (let player of this.rosters[team]) {
           let role = this.selectedRole.toString()
           player.team = team
+          player.bonus = bonuses[player.name]
           if (role === 'all' || role === player.role || !role) {
             players.push(player)
           }
@@ -157,6 +164,9 @@ label.b-radio { width: 100%; }
 .card .subtitle.is-7 {
   padding-top: 0.25rem;
   margin-bottom: 0.75rem;
+}
+.card .list-item {
+  font-size: 0.75rem;
 }
 .content figure {
   margin: 1rem 0 0;

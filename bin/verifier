@@ -7,14 +7,20 @@
  *
  * Verifies if all the player icon file names are
  * consistent with the player names in data.json
+ * also checks the flatpacked stat.json for names
  */
 
 const file = require('fs')
-const path = __dirname + '/../assets/players'
+const path = __dirname + '/../static/players'
 const data = require('../assets/data.json')
+const stat = require('../assets/stat.json')
 
 for (let team in data.rosters) {
   for (let player of data.rosters[team]) {
+    // Check stat.json
+    if (!stat[player.name]) console.log(player.name)
+
+    // Check player images
     file.exists([path, '/', player.icon].join(''), e => {
       if (!e) console.log(player.icon)
     })
